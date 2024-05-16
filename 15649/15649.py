@@ -1,7 +1,7 @@
 # 4 2
 
 import sys
-n, m = [*map(int, sys.stdin.readline().split())]
+n, m = map(int, sys.stdin.readline().split())
 
 
 def backtracking(arr, visited):

@@ -1,6 +1,6 @@
 # 2001. 파리 퇴치
 
-# 1
+# 2
 # 5 2
 # 1 3 3 6 7
 # 8 13 9 12 8
@@ -18,9 +18,7 @@
 T = int(input())
 for test_case in range(T):
     n, m = map(int, input().split())
-    graph = []
-    for _ in range(n):
-        graph.append([*map(int, input().split())])
+    graph = [[*map(int, input().split())] for _ in range(n)]
 
     prefix_sum = [[0] * (n+1) for _ in range(n+1)]
     for r in range(1, n+1):
